@@ -1,0 +1,37 @@
+.App-header{
+    background-color: #EFE9E1;
+} 
+.nav-link {
+    background-color: #EFE9E1;
+    text-decoration: none;
+    color: brown;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+.nav-header {
+    background-color: #EFE9E1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: .6rem;
+    margin: 0;
+    background-color: #EFE9E1;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+

@@ -1,0 +1,14 @@
+.saludo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(80vh - 150px);
+    background: linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.496));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/imagenes/hero.jpg");
+    }
