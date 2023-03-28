@@ -1,45 +1,29 @@
-
-import './App.css';
-import Saludo from "./components/Saludo";
-import Item from "./components/Item/Item";
-import Flex from "./components/Flex/Flex";
-import NavBar from "./components/Header/NavBar";
-
+import "./App.css";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import NavBar from "./components/navbar/NavBar";
+import Nosotros from "./components/nosotros/Nosotros";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
-    <div>
-      <div className="App">
-        <header className="App-header">
-          <NavBar/>
-          <Saludo texto=" Contamos con una amplia selección de productos." />
+    <BrowserRouter>
+      <NavBar />
 
-          <Flex>
-            <Item
-              title="Mate"
-             /* price=""*/
-              description=""
-              img="/imgs/mate.avif"
-            />
-            <Item
-              title="Yerba"
-             /* price=""*/
-              description=""
-              img="/imgs/yerba.jpeg"
-            />
-            <Item
-              title="Bombilla"
-             /* price=""*/
-              description=""
-              img="/imgs/bombilla.webp"
-              otraProp="...."
-              /*numero={1} */
-            />
-          </Flex>
-        </header>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:categoryid" element={ <ItemListContainer/> } />
+        
+        <Route path="/detalle/:tipoid" element={<ItemDetailContainer />} />
+        {/* /cursos/3 */}
+        
+        <Route path="/nosotros" element={<Nosotros/>} />
+        <Route path="*" element={<h1>Error 404: Page not found</h1>} />
+      </Routes>
+
+      {/* Footer */}
+    </BrowserRouter>
   );
 }
 

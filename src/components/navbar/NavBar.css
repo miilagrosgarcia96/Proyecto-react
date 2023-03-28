@@ -1,19 +1,9 @@
+
 .App-header{
     background-color: #EFE9E1;
 } 
-.nav-link {
-    background-color: #EFE9E1;
-    text-decoration: none;
-    color: brown;
-    text-align: center;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: header;
-}
 
-.nav-link:hover {
+.nav-menu li:hover {
     font-weight: 600;
 }
 .nav-header {
@@ -34,4 +24,14 @@
     justify-content: center;
     gap: 2rem;
 }
-
+.nav-menu li {
+    background-color: #EFE9E1;
+    text-decoration: none;
+    color: brown;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}

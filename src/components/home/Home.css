@@ -1,39 +1,31 @@
-a{
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .price-discount{
-    color: darkolivegreen;
-  }
-  
-  .font-xl{
-    font-size: 20 px;
-  }
-  
-  .item-card{
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 32px -6px rgba(0, 0, 0, 0.75);
+    background-color: white;
     color: black;
-    text-align: center;
-    position: relative;
-    margin: 10px 15px;
-    padding-bottom: 25px;
-    width: 320px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.22);
-    background-color: #fff;
-    overflow: hidden;  
-    transition: all 0.20s ease-in;
-    cursor: pointer;
+    border: groove 6px #7d4a31;
+    border-radius: 15px;
+    margin: 20px;
   }
   
+
   .item-card_header{
-    background-color: rgb(233, 233, 233);
+    background-color: #7d4a31;
+    width: 100%;
     font-size: large;
   }
   
-  .item-card_header h2{
-    padding: 16px 2px;
-    margin: 0px;
+  .item-card_header h3{
+    background-color: #7d4a31;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
   }
   
   .item-card_img{
@@ -53,7 +45,7 @@ a{
   }
   
   .item-card_detail{
-    height: 20px;
+    height: 140px;
     padding: 12px 8px;
   }
   
@@ -82,13 +74,6 @@ a{
     background-color: rgb(223, 117, 84);
     color: white;
   }
-  
-  .item-card_favicon.favorite.green{
-    display: block;
-    background-color: rgb(84, 223, 147);
-    color: white;
-  }
-  
   
   small{
     color: #8c8c8e;
